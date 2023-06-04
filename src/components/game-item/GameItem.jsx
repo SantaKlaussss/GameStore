@@ -1,19 +1,25 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import GameCover from "../game-cover/GameCover";
 import GameBuy from "../game-buy/GameBuy";
 import GameGenre from "../game-genre/GameGenre";
 import { setCurrentGame } from "../../redux/games/reducer";
 import './GameItem.css';
+import Pagination from "../pagination/pagination";
 
 const GameItem = ({ game }) => {
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleClick = () => {
     dispatch(setCurrentGame(game));
     navigate(`/app/${game.title}`);
+  }
+
+  const onPageChanged = (pageNumber) => {
+
   }
 
   return (
