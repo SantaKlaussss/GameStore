@@ -3,8 +3,7 @@ import classNames from 'classnames';
 import './Button.css'
 
 const Button = ({ onClick, type, children, size = 's' }) => {
-  const btnClass = classNames({
-    'btn': true,
+  const btnClass = classNames('btn', {
     'btn--secondary': type === 'secondary',
     'btn--primary': type === 'primary',
     'btn--small': size === 's',

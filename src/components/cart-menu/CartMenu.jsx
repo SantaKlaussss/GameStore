@@ -9,7 +9,12 @@ const CartMenu = ({ items, onClick }) => {
       <div className="cart-menu__game-list">
         {
           items.length > 0
-            ? items.map(game => <CartItem key={game.title} title={game.title} price={game.price} id={game.id}/>)
+            ? items.map(game => <CartItem 
+                key={game.title} 
+                title={game.title} 
+                price={game.price} 
+                id={game.id}
+              />)
             : 'Cart empty'
         }
       </div>
@@ -19,7 +24,11 @@ const CartMenu = ({ items, onClick }) => {
           <div className="cart-menu__total-price">
             <span>Итого:</span>
             <span>{calcTotalPrice(items)} руб.</span>
-            <Button type="primary" size='m' onClick={onClick}>
+            <Button 
+              type="primary" 
+              size='m' 
+              onClick={onClick}
+            >
               Оформить заказ
             </Button>
           </div>

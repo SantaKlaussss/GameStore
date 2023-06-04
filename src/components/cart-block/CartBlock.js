@@ -22,8 +22,14 @@ const CartBlock = () => {
 
   return (
     <div className="cart-block">
-      <ItemsInCart quantity={items.length} />
-      <SiAmazons3 size={25} className="cart-block__icon" onClick={() => setIsCartMenuVisible(!isCartMenuVisible)} />
+      <ItemsInCart 
+        quantity={items.length} 
+      />
+      <SiAmazons3 
+        size={25} 
+        className="cart-block__icon" 
+        onClick={() => setIsCartMenuVisible(!isCartMenuVisible)} 
+      />
       {
         totalPrice > 0
           ? <span className="cart-block__total-price"> {totalPrice} руб. </span>
