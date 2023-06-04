@@ -19,6 +19,7 @@ const GameBuy = ({ game }) => {
     }
   }
 
+  
   return (
     <div className='game-buy'>
       <span className="game-price">{game.price} руб.</span>
