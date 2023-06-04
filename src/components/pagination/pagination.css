@@ -12,5 +12,10 @@
 }
 
 .block-pagination:active {
-  background-color: rgb(215, 79, 55);
+  background-color: white
+}
+
+.block-pagination__active {
+  background-color: rgb(255, 126, 71);
+  font-weight: bold;
 }
