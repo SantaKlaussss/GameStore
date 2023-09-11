@@ -1,0 +1,21 @@
+.block-pagination {
+  margin-right: 10px;
+  padding: 5px 12px;
+  background: rgb(0, 204, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.block-pagination:hover {
+  opacity: 0.8;
+}
+
+.block-pagination:active {
+  background-color: white
+}
+
+.block-pagination--active {
+  background-color: rgb(255, 126, 71);
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.home-page__games {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-page__pagination {
+  margin: 20px auto;
+  display: flex;
+}
